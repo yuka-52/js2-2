@@ -1,15 +1,14 @@
 'use strict';
 
-
- function get_calc(btn){
+ function clickbutton(target) {
       let result = document.getElementById("result")
-      let btn_value = btn.innerHTML;
+      let target_value = target.innerHTML;
      
-      if (btn_value == "=") {
-       console.log("=")
-     } else if (btn_value == "="){
-       console.log("=")
+      if (target_value == "AC") {
+       console.log("AC");
+     } else if (target_value == "=") {
+       console.log("=");
      } else {
-       console.log("それ以外")
+       console.log("それ以外");
      }
-     }
+ }
