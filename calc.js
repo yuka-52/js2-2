@@ -1,14 +1,19 @@
 'use strict';
-
- function clickbutton(target) {
-      let result = document.getElementById("result")
-      let target_value = target.innerHTML;
-     
-      if (target_value == "AC") {
-       console.log("AC");
-     } else if (target_value == "=") {
-       console.log("=");
+function clickbutton (target) {
+   let result = document.getElementById("result");
+   let target_value = target.innerHTML;
+   
+   if (target_value == "=") {
+      result.innerHTML = eval(result.innerHTML);
+      
+   } else if (target_value == "AC") {
+      result.innerHTML = "0";
+   } else {
+       if (result.innerHTML == "0") {
+     result.innerHTML = target_value;  
      } else {
-       console.log("それ以外");
-     }
- }
+      result.innerHTML += target_value; 
+      }
+   }
+}
+   
