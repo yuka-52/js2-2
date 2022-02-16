@@ -40,11 +40,23 @@
       border-color: blue;
       border-style: solid;
     }
-    
-  .ac_button{
-   width: 250px;
+ 
+.button_ac{   
+      width: 240px;
+      height: 60px;
+      font-size: x-large;
+      background-color: #dcdcdca4;
+      border: none;
+      border-radius: 20px;
+      border-color:black;
     }
     
-  .equal{
-   width: 250px;
+  .button_equal{
+      width: 240px;
+      height: 60px;
+      font-size: x-large;
+      background-color: #dcdcdca4;
+      border: none;
+      border-radius: 20px;
+      border-color:black;
     }
