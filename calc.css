@@ -1,4 +1,4 @@
- table {
+table {
       width: 400px;
       height: 400px;
       /* インライン要素を中央に配置 */
@@ -16,7 +16,7 @@
       font-size: 30px;
  }
  
-  input {
+  .button {
       width: 120px;
       height: 60px;
       font-size: x-large;
@@ -32,16 +32,21 @@
       background: black;
       border-radius: 0px;
     }
-  input:active {
+    
+  .button:active {
       border-color: blue;
       border-style: solid;
     }
-  .operator:active {
+  .button_ac:active {
       border-color: blue;
       border-style: solid;
     }
- 
-.button_ac{   
+   .button_equal:active {
+      border-color: blue;
+      border-style: solid;
+    }
+    
+  .button_ac{
       width: 240px;
       height: 60px;
       font-size: x-large;
