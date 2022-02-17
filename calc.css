@@ -1,22 +1,57 @@
 table {
       width: 400px;
       height: 400px;
-      /* インライン要素を中央に配置 */
       text-align: center;
-      /* 余白調整 */
       margin: 0px;
     }
  
- #result {
+#result {
       height: 60px;
       width: 100%;
       background-color: black;
       color:white;
       text-align: right;
       font-size: 30px;
- }
+     }
  
-  .button {
+input {
+      width: 120px;
+      height: 60px;
+      font-size: x-large;
+      background-color: #dcdcdca4;
+      border: none;
+      border-radius: 20px;
+      border-color:black;
+     }
+    
+.display {
+      width: 480px;
+      text-align: right; 
+      background: black;
+      border-radius: 0px;
+    }
+    
+input:active {
+      border-color: blue;
+      border-style: solid;
+    }
+
+.operator:active {
+      border-color: blue;
+      border-style: solid;
+    }
+    
+.equal:active {
+      border-color: blue;
+      border-style: solid;
+    }
+    
+.operator_ac:active {
+      border-color: blue;
+      border-style: solid;
+    }
+    
+.operator{
       width: 120px;
       height: 60px;
       font-size: x-large;
@@ -26,27 +61,7 @@ table {
       border-color:black;
     }
     
-  .display {
-      width: 480px;
-      text-align: right; /* 文字を右詰めに */
-      background: black;
-      border-radius: 0px;
-    }
-    
-  .button:active {
-      border-color: blue;
-      border-style: solid;
-    }
-  .button_ac:active {
-      border-color: blue;
-      border-style: solid;
-    }
-   .button_equal:active {
-      border-color: blue;
-      border-style: solid;
-    }
-    
-  .button_ac{
+.equal{
       width: 240px;
       height: 60px;
       font-size: x-large;
@@ -56,7 +71,7 @@ table {
       border-color:black;
     }
     
-  .button_equal{
+ .operator_ac{
       width: 240px;
       height: 60px;
       font-size: x-large;
@@ -64,5 +79,4 @@ table {
       border: none;
       border-radius: 20px;
       border-color:black;
-    }
-。
+   }
