@@ -1,19 +1,28 @@
 'use strict';
-function clickbutton (target) {
-   let result = document.getElementById("result");
-   let target_value = target.innerHTML;
-   
-   if (target_value == "=") {
-      result.innerHTML = eval(result.innerHTML);
-      
-   } else if (target_value == "AC") {
-      result.innerHTML = "0";
+let result =document.getElementById("result");
+
+function number(elem) {
+   if (result.value === "0"){
+       return;
    } else {
-       if (result.innerHTML == "0") {
-     result.innerHTML = target_value;  
-     } else {
-      result.innerHTML += target_value; 
-      }
+       result.value = result.value + elem.value;
+   }
+ }
+
+function get_calc(elem) {
+   if (result.value.slice(-1) === '+' ){
+       return;
+   } else if (result.value.slice(-1) === '-' ){
+       return;
+   } else if (result.value.slice(-1) === '*' ){
+       return;
+   } else if (result.value.slice(-1) === '/' ){
+       return;
+   } else {
+       result.value = result.value + elem.value;
    }
 }
-   
+
+function calc() {
+    result.value = new Function( "return " + result.value)();
+}
