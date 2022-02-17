@@ -26,3 +26,6 @@ function get_calc(elem) {
 function calc() {
     result.value = new Function( "return " + result.value)();
 }
+function clear_calc(){
+    result.value = '';
+}
